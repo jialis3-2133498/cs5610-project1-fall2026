@@ -1,0 +1,15 @@
+:root {
+    --color-bg: #e6e2d3;  /* main page background*/
+    --color-surface: #dac292; /* cards / secondary areas*/
+    --color-accent:#b9936c; /* accent / navbar / buttons / highlights*/
+    --color-muted:#c4b7a6; /* borders / muted sections*/
+    --color-text: #000000; /* primary text*/
+    --space-small: 0.5rem;
+    --space-medium: 1rem;
+    --space-large: 2rem;
+
+    --text-small: 0.875rem;
+    --text-base: 1rem;
+    --text-large: 1.5rem;
+    --text-xlarge: 2rem;
+}
