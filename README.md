@@ -29,3 +29,20 @@ I spent approximately 15 hours on this project.
 I used ChatGPT to help me understand the rules of crossword puzzles and to help generate and review the puzzle words and clues. I also used ChatGPT for explanations of HTML and CSS concepts, such as `:hover`, responsive design, and accessibility, as well as for debugging suggestions. I wrote and implemented all the HTML and CSS code myself based on the course material and my own design decisions. I learned about the Navbar, CSS Grid, Flexbox, and other components from the course lectures. For the webpage color palette, I referenced the W3Schools color palette website [1].
 
 [1]: https://www.w3schools.com/colors/colors_palettes.asp
+
+
+## Lighthouse Score
+
+#### I used Lighthouse in Mobile mode because this project emphasizes responsive design and specifically requires the site to work well on small screens.
+
+### Home Page
+![Home page Lighthouse score](images/Home-Page-LightHouse.png) 
+
+### Game Page
+![Game page Lighthouse score](images/Game-Page-LightHouse.png) 
+
+### About Page
+![About page Lighthouse score](images/About-Page-LightHouse.png) 
+
+### Contact Page
+![Contact page Lighthouse score](images/Contact-Page-LightHouse.png) 
