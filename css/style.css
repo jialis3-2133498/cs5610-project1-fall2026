@@ -22,9 +22,14 @@ html{
 }
 
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     font-size: var(--text-base);
     line-height: 1.5;
     margin: 0;
@@ -34,6 +39,7 @@ main{
     max-width: 65ch;
     margin: 0 auto;
     padding: var(--space-medium);
+    flex: 1;
 }
 
 h1{
@@ -52,7 +58,7 @@ h2{
 }
 
 h3{
-    font-size: var(--text-small);
+    font-size: var(--text-base);
     margin: var(--space-medium) 0;
 }
 
@@ -140,4 +146,23 @@ nav a[aria-current="page"] {
         gap: var(--space-medium);
     }
 
+}
+
+.site-footer {
+    text-align: center;
+    padding: var(--space-large) var(--space-medium);
+    font-size: var(--text-small);
+}
+.site-footer p {
+    margin: 0;
+    font-size: var(--text-small);
+}
+
+.site-footer::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-accent-dark);
+    margin: 0 auto var(--space-small);
 }
