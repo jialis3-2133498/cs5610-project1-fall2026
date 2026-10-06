@@ -43,3 +43,23 @@
 
     pointer-events: none;
 }
+
+.game-main {
+    max-width: 70rem;
+}
+
+.puzzle-and-clues-container {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    gap: var(--space-large);
+    align-items: start;
+}
+.game-introduction {
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+.game-content {
+    width: fit-content;
+    margin: 0 auto;
+}
