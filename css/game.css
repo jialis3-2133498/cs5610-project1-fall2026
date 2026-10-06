@@ -45,6 +45,28 @@
     pointer-events: none;
 }
 
+.clear-button {
+    margin-top: var(--space-medium);
+    padding: var(--space-small) var(--space-medium);
+    background-color: var(--color-surface);
+    border: none;
+    border-radius: 0.5rem;
+    font:inherit;
+    font-weight: bold;
+    min-height: 44px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+@media(hover: hover) {
+    .clear-button:hover {
+        color: var(--color-accent-dark);
+    }
+}
+.clear-button:focus-visible {
+    outline: 2px dashed var(--color-text);
+    outline-offset: 2px;
+}
+
 .game-main {
     max-width: 70rem;
 }
