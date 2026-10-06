@@ -77,6 +77,8 @@ a:focus-visible{
 header{
     background-color: var(--color-accent);
     padding: 0 var(--space-medium) var(--space-small);
+    position:sticky;
+    top: 0;
 }
 
 nav ul{
