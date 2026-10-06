@@ -73,3 +73,35 @@ a:focus-visible{
     outline: 2px dashed var(--color-text);
     outline-offset: 2px;
 }
+
+header{
+    background-color: var(--color-accent);
+    padding: 0 var(--space-medium) var(--space-small);
+}
+
+nav ul{
+    max-width: 36rem;
+    margin: 0 auto;
+
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-medium);
+
+    align-items: center;
+
+}
+
+nav a {
+    display: inline-block;
+    padding: var(--space-small);
+}
+
+nav a[aria-current="page"] {
+    font-weight: 800;
+    background-color: var(--color-bg);
+    border-radius: 0.5rem;
+    text-decoration-thickness: 2px;
+}
