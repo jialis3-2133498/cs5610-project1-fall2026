@@ -61,6 +61,15 @@ p{
     margin: var(--space-medium) 0;
 }
 
+.profile-photo {
+    display: block;
+    max-width: 12rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: var(--space-medium) 0 var(--space-large);
+}
+
 a{
     color: var(--color-text);
     text-decoration: underline;
