@@ -3,6 +3,7 @@
     grid-template-columns: repeat(5, 1fr);
     max-width: 20rem;
     margin: 0 auto;
+    width: 100%;
 }
 .box{
     aspect-ratio: 1/1;
@@ -47,20 +48,21 @@
 .game-main {
     max-width: 70rem;
 }
-
-.puzzle-and-clues-container {
-    display: grid;
-    grid-template-columns: 20rem auto;
-    gap: var(--space-large);
-    align-items: start;
-}
-.game-introduction {
+.game-heading {
     max-width: 65ch;
     margin: 0 auto;
 }
 
+
+.puzzle-and-clues-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-large);
+    align-items: start;
+}
+
 .game-content {
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -82,4 +84,14 @@ summary {
 summary:focus-visible {
     outline: 2px dashed var(--color-text);
     outline-offset: 2px;
+}
+
+@media (min-width: 48rem) {
+    .game-content {
+        width:fit-content;
+    }
+    .puzzle-and-clues-container {
+        grid-template-columns: 20rem auto;
+    }
+    
 }

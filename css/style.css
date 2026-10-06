@@ -27,7 +27,7 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: var(--text-base);
     line-height: 1.5;
-    margin: 0%;
+    margin: 0;
 }
 
 main{
@@ -37,17 +37,22 @@ main{
 }
 
 h1{
-    font-size: var(--text-xlarge);
+    font-size: var(--text-large);
     margin: var(--space-medium) 0;
+}
+.site-title {
+    font-size: var(--text-medium);
+    font-weight: bold;
+    margin: 0;
 }
 
 h2{
-    font-size: var(--text-large);
+    font-size: var(--text-medium);
     margin: var(--space-medium) 0;
 }
 
 h3{
-    font-size: var(--text-medium);
+    font-size: var(--text-small);
     margin: var(--space-medium) 0;
 }
 
@@ -79,6 +84,7 @@ header{
     padding: 0 var(--space-medium) var(--space-small);
     position:sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav ul{
@@ -90,14 +96,16 @@ nav ul{
 
     display: flex;
     justify-content: space-between;
-    gap: var(--space-medium);
+    gap: var(--space-small);
 
     align-items: center;
 
 }
 
 nav a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     padding: var(--space-small);
 }
 
@@ -106,4 +114,21 @@ nav a[aria-current="page"] {
     background-color: var(--color-bg);
     border-radius: 0.5rem;
     text-decoration-thickness: 2px;
+}
+
+@media (min-width: 48rem) {
+    h1 {
+        font-size: var(--text-xlarge);
+    }
+    h2 {
+        font-size: var(--text-large);
+    }
+    h3 {
+        font-size: var(--text-medium);
+    }
+
+    nav ul {
+        gap: var(--space-medium);
+    }
+
 }
